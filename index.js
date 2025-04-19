@@ -59,7 +59,7 @@ app.all('/player/*', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-    res.send('Hello World!');
+    res.send('Hello World! Apa lu');
 });
 
 app.listen(5000, function () {
