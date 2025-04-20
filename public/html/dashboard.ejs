@@ -99,11 +99,29 @@
     .floating-image {
       animation: floaty 3s ease-in-out infinite;
     }
+
+    .custom-scroll::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #2b4d6d; /* warna track belakang */
+    }
+    
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background-color: #00b8ff; /* warna 'bar' utamanya */
+      border-radius: 8px;
+      border: 2px solid #2b4d6d; /* biar clean di sisi */
+    }
+    
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+      background-color: #87b8cc; /* warna saat hover */
+    }
   </style>
 </head>
 <body class="flex flex-col items-center justify-center h-screen" style="background-color: rgba(0, 0, 0, 0);">
   <div class="fixed inset-0 focus-within:shadow-[0_0_6px_1px_#00b8ff] flex items-center justify-center">
-    <div class="whole-box relative bg-[#2b4d6d] border-4 border-[#87b8cc] p-6 w-[90%] max-w-md rounded-lg shadow-xl overflow-y-auto max-h-[90vh]">
+    <div class="whole-box relative bg-[#2b4d6d] border-4 border-[#87b8cc] p-6 w-[90%] max-w-md rounded-lg shadow-xl overflow-y-auto max-h-[90vh] custom-scroll">
     
       <img src="https://cdn.discordapp.com/attachments/1275704825967022144/1363483093775683674/Diamond_Lock.png?ex=68063215&is=6804e095&hm=c1fc4f582183cad7f885965e4e2daf539b5db4262ea3856860c827bf9ada59b5&" class="floating-image absolute top-[10px] left-[3px] w-20 h-20 z-10" style="width: 40px; height: 40px;"/>
       <img src="https://cdn.discordapp.com/attachments/1275704825967022144/1363483016063615016/World_Lock.png?ex=68063203&is=6804e083&hm=3e9ed1a160fb9e041b199ca73b4c55700105bc9457f2aff7774db31ebf0c4871&" class="floating-image absolute top-[10px] left-[397px] w-20 h-20 z-10" style="width: 40px; height: 40px;"/>
