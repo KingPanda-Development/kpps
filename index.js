@@ -57,8 +57,8 @@ app.all('/player/growid/login/validate', (req, res) => {
 app.all('/hosts', (req, res) => {
     res.send(
         `
-        146.190.106.32 www.growtopia1.com
-        146.190.106.32 www.growtopia2.com
+        146.190.106.32 www.growtopia1.com\n
+        146.190.106.32 www.growtopia2.com\n
         146.190.106.32 osm.growplus.asia
         `,
     );
