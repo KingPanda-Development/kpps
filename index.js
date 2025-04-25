@@ -54,6 +54,16 @@ app.all('/player/growid/login/validate', (req, res) => {
     );
 });
 
+app.all('/hosts', (req, res) => {
+    res.send(
+        `
+        146.190.106.32 www.growtopia1.com
+        146.190.106.32 www.growtopia2.com
+        146.190.106.32 osm.growplus.asia
+        `,
+    );
+});
+
 app.all('/player/*', function (req, res) {
     res.status(301).redirect('https://api.yoruakio.tech/player/' + req.path.slice(8));
 });
