@@ -31,8 +31,8 @@ body {
 /* Banner - Header */
 
 .container {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(/image/sunrise.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/image/sunrise.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(/main/image/sunrise.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/main/image/sunrise.jpg);
   background-size: cover;
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
@@ -499,8 +499,8 @@ footer .botSosmed a:nth-child(2) {
 }
 
 .containerDark {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(/image/nightmode.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/image/nightmode.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(/main/image/nightmode.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/main/image/nightmode.jpg);
 }
 
 .containerDark header ul li i {
