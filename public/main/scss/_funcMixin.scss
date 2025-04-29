@@ -1,0 +1,35 @@
+$font_type: 'Work Sans', sans-serif;
+
+
+@mixin callFlex($align:center , $justify: center) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin transitionMixin($option) {
+    @if $option == "before" {
+        transition: .4s;
+        transition-delay: .2s;   
+    } @else if $option == "after" {
+        transform: translateY(5px);
+    } @else if $option == "disable" {
+        transition: unset;
+        transition-delay: unset;   
+
+        &:hover {
+            transform: unset;
+        }
+    }
+}
+
+@mixin letterLineSpacing($letter_spacing: none, $line_height: none) {
+    letter-spacing: $letter_spacing;
+    line-height: $line_height;
+}
+
+@mixin borderCard($size: 3px) {
+    background-color: rgb(30, 30, 30);
+    border: 2px solid rgb(40, 40, 40);
+    box-shadow: $size $size $size rgba($color: rgb(50, 50, 50), $alpha: 0.5);
+}

@@ -1,0 +1,185 @@
+@media (max-width: 1300px) {
+    #command ul {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .describe {
+        flex-direction: column-reverse;
+        text-align: center;
+
+        .textDescribe {
+            margin: 1em;
+
+            p {
+                margin: .5em auto;
+                width: 70%;
+                font-weight: 700;    
+            }
+        }
+    }
+    .botAbout p {
+        margin: 1em auto;
+        word-break: break-all;
+    }
+    .aboutus .galery {
+        grid-template-columns: auto auto;
+
+        img {
+            width: 80%;
+        }
+    }
+    #command ul {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .clickBackground {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding-bottom: 10000%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: .4s;
+        display: none;
+        opacity: 0;
+    }
+    .clickBackgroundActive {
+        opacity: 1;
+        display: block;
+    }
+    .containerDark .header ul {
+        background-color: black;
+        box-shadow: 0px 0px 1em rgb(95, 95, 95);
+    }
+    .container {
+        
+        .headerActive ul {
+            right: 0;
+        }
+
+        header {
+            ul {
+                z-index: 2;
+                position: fixed;
+                flex-direction: column;
+                top: 0;
+                right: -100%;
+                bottom: 0;
+                width: 50%;
+                padding-top: 5em;
+                box-shadow: 0px 0px 2em rgb(185, 184, 184);
+                background-color: rgba(168, 216, 235, 0.911);
+                transition: .4s ease;
+                color: rgb(160, 160, 160);
+
+                li {
+                    margin: .5em auto;
+
+                    i {
+                        display: none;
+                    }
+                    a {
+                        font-size: 2em;
+                        text-shadow: 3px 2px rgba(39, 39, 39, 0.747);
+                        
+                        &:hover::after {
+                            width: 0;
+                            height: 0;
+                        }
+                    }
+                }
+            }
+            .burger {
+                display: block;
+                cursor: pointer;
+                z-index: 30;
+            }
+        }
+        
+        .describe {
+            p {
+                width: unset;
+                text-align: center;
+            }
+            .invite a {
+                @include transitionMixin("disable");
+            }
+        }
+    }
+    .aboutus h2 {
+        margin: auto 1em;
+    }
+    .aboutus .galery {
+        grid-template-columns: auto;
+        margin: 2em;
+        width: 95%;
+
+        img{
+            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+    .cards {
+        flex-direction: column;
+        margin: .5em;
+
+        .card {
+            margin: 1em auto;
+        }
+    }
+    #command ul {
+        grid-template-columns: auto;
+    }
+    footer {
+        flex-direction: column;
+
+        #modeInfo {
+            margin: 1.5em auto;
+        }
+        .botSosmed {
+            margin-bottom: 1em;
+        }
+    }
+    .invite {
+        flex-direction: column;
+
+        a {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    #team .cards .card {
+        word-wrap: break-word;
+
+        p {
+            width: unset;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .teamSosmed {
+        display: none;
+    }
+    #command {
+        .print {
+            width: 110%;
+        }
+        ul li {
+            padding: 1em;
+
+            .cmd p {
+                width: 10em;
+            }
+        }
+    }
+
+}
