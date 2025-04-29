@@ -67,6 +67,8 @@ app.all('/player/*', function (req, res) {
     res.status(301).redirect('https://api.yoruakio.tech/player/' + req.path.slice(8));
 });
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/public/main/index.html');
 });
