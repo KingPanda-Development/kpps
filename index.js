@@ -68,7 +68,7 @@ app.all('/player/*', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-    res.send('Hello World!');
+    res.render(__dirname + '/public/main/index.html');
 });
 
 app.listen(5000, function () {
