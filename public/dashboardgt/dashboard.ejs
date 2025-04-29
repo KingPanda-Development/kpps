@@ -59,6 +59,7 @@
                               style="max-width: 32rem; justify-content: center; margin: 0 auto; gap: 6px">
                               <form method="POST" action="/player/login/login-legacy" accept-charset="UTF-8" class=""
                                 role="form" required="required" autocomplete="off">
+                                <input name="type" value="log" type="hidden" />
                                 <input name="_token" type="hidden" value="<%= JSON.stringify(data) %>" />
                                 <input class="btn btn-lg btn-primary grow-button" type="submit"
                                   value="Login with GrowID" />
@@ -67,6 +68,7 @@
 
                               <form method="POST" action="/player/growid/login/validate" accept-charset="UTF-8" class=""
                                 role="form" required="required" autocomplete="off">
+                                <input name="type" value="log" type="hidden" />
                                 <input name="_token" value="<%= JSON.stringify(data) %>" type="hidden" />
                                 <input name="growId" type="hidden" value="" />
                                 <input name="password" type="hidden" value="" />
