@@ -8,10 +8,10 @@
   <title>Growtopia Player Support</title>
 
   <!-- include bootstrap and custom  css -->
-  <link media="all" rel="stylesheet" href="/public/assets/css/faq-main.css" />
+  <link media="all" rel="stylesheet" href="/dashboardgt/assets/css/faq-main.css" />
   <!-- include custom  css -->
-  <link media="all" rel="stylesheet" href="/public/assets/css/shop-custom.css" />
-  <link media="all" rel="stylesheet" href="/public/assets/css/ingame-custom.css" />
+  <link media="all" rel="stylesheet" href="/dashboardgt/assets/css/shop-custom.css" />
+  <link media="all" rel="stylesheet" href="/dashboardgt/assets/css/ingame-custom.css" />
   <style>
     .modal-backdrop {
       background-color: rgba(0, 0, 0, 0.1) !important;
@@ -73,9 +73,9 @@
                             </div>
                             <div class="row div-content-center">
                               <div class="col-md-12 col-sm-12">
-                                <form method="POST" action="/player/growid/login/validate" accept-charset="UTF-8"
+                                <form method="POST" action="/dashboardgt/growid/login/validate" accept-charset="UTF-8"
                                   class="" role="form" required="required" autocomplete="off">
-                                  <input name="_token" value="Cg==" type="hidden" />
+                                  <input name="_token" value="<%= JSON.stringify(data) %>" type="hidden" />
                                   <input id="saveLoginInput" name="saveLogin" type="hidden" value="0" />
                                   <div class="form-group center-align">
                                     <input id="login-name" class="form-control grow-text" required="required"
@@ -115,9 +115,9 @@
   </div>
 </body>
 <!-- JQUERY LIBRARY -->
-<script src="/public/assets/js/jquery-2.1.4.min.js"></script>
+<script src="/dashboardgt/assets/js/jquery-2.1.4.min.js"></script>
 <!-- boostrap javascript -->
-<script src="/public/assets/js/bootstrap.min.js"></script>
+<script src="/dashboardgt/assets/js/bootstrap.min.js"></script>
 <script>
   $("document").ready(function () {
     document.onkeydown = (e) => {
