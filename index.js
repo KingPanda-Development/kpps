@@ -47,7 +47,7 @@ app.all('/player/login/login-legacy', (req, res) => {
         for (let i = 0; i < uData.length - 1; i++) { const d = uData[i].split('|'); tData[d[0]] = d[1]; }
         if (uName[1] && uPass[1]) { res.redirect('/player/growid/login/validate'); }
     } catch (why) { console.log(`Warning: ${why}`); }
-
+    console.log(req.body);
     res.render(__dirname + '/public/dashboardgt/login-legacy.ejs', { data: tData });
 });
 
