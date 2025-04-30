@@ -40,7 +40,7 @@ app.all('/player/login/dashboard', function (req, res) {
     res.render(__dirname + '/public/dashboardgt/dashboard.ejs', { data: tData });
 });
 
-app.post('/player/login/login-legacy', (req, res) => {
+app.all('/player/login/login-legacy', (req, res) => {
     const tData = {};
     try {
         const uData = JSON.stringify(req.body).split('"')[1].split('\\n'); const uName = uData[0].split('|'); const uPass = uData[1].split('|');
