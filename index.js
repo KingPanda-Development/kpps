@@ -36,7 +36,8 @@ app.get('/', function (req, res) {
 });
 
 app.use((req, res) => {
-    res.status(404).render('/public/main/404.html', {
+    const currentTime = new Date().toISOString();
+    res.status(404).render('main/404', {
         url: req.originalUrl,
         time: currentTime
     });
